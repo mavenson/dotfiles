@@ -14,7 +14,6 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -23,8 +22,8 @@ set $menu dmenu_path | wofi --show dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-set $wallpaper1 /home/jas/images/wallpaper/arieltopography.jpg 
-set $wallpaper2 /home/jas/images/wallpaper/largergreenfalls.jpg 
+set $wallpaper1 /home/jas/images/wallpaper/bg4.jpg 
+set $wallpaper2 /home/jas/images/wallpaper/bg3.jpg 
 
 
 # Example configuration:
@@ -40,11 +39,12 @@ output HDMI-A-2 bg $wallpaper2 fill
 
 focus output DVI-D-1
 
-set $opacity 0.9
+set $opacity 0.94
 
 for_window [class=".*"] opacity $opacity
 
 for_window [app_id=".*"] opacity $opacity
+
 
 
 
@@ -92,7 +92,7 @@ input "7247:22:SIGMACHIP_USB_Keyboard" {
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec alacritty 
 
     # Kill focused window
     bindsym $mod+Shift+q kill

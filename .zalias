@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 #
-alias zshenv="nvim /home/jas/.zshenv"
+alias zshenv="nvim /etc/zshenv"
 alias zshrc="nvim /home/jas/.zshrc"
 alias zprofile="nvim /home/jas/.zprofile"
 alias zalias="nvim /home/jas/.zalias"
@@ -9,6 +9,8 @@ alias alaccfg="nvim /home/jas/.config/alacritty/alacritty.yml"
 alias ls="colorls"
 alias l="colorls -la"
 alias dfgit="/usr/bin/git --git-dir=/home/jas/.cfg/ --work-tree=/home/jas"
-alias rsource="source /etc/zshenv"
+alias rsource="source /home/jas/.zshenv && cat /home/jas/.zshenv"
 alias waybarcfg="nvim /home/jas/.config/waybar/config"
 alias sources="sudo nvim /etc/apt/sources.list"
+alias update="sudo apt update | lolcat && sudo apt upgrade | lolcat"
+alias cat="cat |lolcat"
