@@ -7,7 +7,7 @@ export SDL_VIDEODRIVER='wayland'
 export ECORE_EVAS_ENGINE='wayland'
 export ELM_ENGIN='wayland_egl'
 export _JAVA_AWT_WM_NONREPARENTING=1
-export COLORTERM='truecolor'
 
-source /home/jas/.zshrc
+
+source /home/jas/.zprofile
 
