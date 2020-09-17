@@ -1,0 +1,12 @@
+#!/usr/bin/zsh
+#
+alias zshenv="nvim /home/jas/.zshenv"
+alias zshrc="nvim /home/jas/.zshrc"
+alias zprofile="nvim /home/jas/.zprofile"
+alias zalias="nvim /home/jas/.zalias"
+alias swaycfg="nvim /home/jas/.config/sway/config"
+alias alaccfg="nvim /home/jas/.config/alacritty/alacritty.yml"
+alias ls="colorls"
+alias l="colorls -la"
+alias dfgit="/usr/bin/git --git-dir=/home/jas/.cfg/ --work-tree=/home/jas"
+alias rsource="source /etc/zshenv"
