@@ -18,7 +18,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | wofi --show drun | xargs swaymsg exec --
+set $menu dmenu_path | wofi --show dmenu | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -67,6 +67,15 @@ for_window [app_id=".*"] opacity $opacity
 ### Input configuration
 #
 # Example configuration:
+input "5426:55:Љ_Razer_DeathAdder_2013" {
+    accel_profile flat
+	    pointer_accel -0.6
+}
+input "7247:22:SIGMACHIP_USB_Keyboard" {
+    xkb_layout us
+    repeat_delay 330
+    repeat_rate 25
+}
 #
 #   input "2:14:SynPS/2_Synaptics_TouchPad" {
 #       dwt enabled

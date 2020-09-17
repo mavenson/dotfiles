@@ -9,5 +9,5 @@ export ELM_ENGIN='wayland_egl'
 export _JAVA_AWT_WM_NONREPARENTING=1
 export COLORTERM='truecolor'
 
-
+source /home/jas/.zshrc
 
