@@ -14,5 +14,5 @@ alias rsource='source /home/jas/.zshenv && echo |lolcat -B -f 0.4 -S 4 -s 0 /hom
 alias waybarcfg="vim /home/jas/.config/waybar/config"
 alias sources="sudo vim /etc/apt/sources.list"
 alias update="sudo apt update |lolcat -f 0.7 -S 2 -s 0 && sudo apt upgrade |lolcat -B -f 0.4 -S 4 -s 0"
-alias lcat="echo |cat |lolcat -B -f 0.4 -S 8"
-alias cat="pygmentize -N -O full,style=/home/jas/.config/alacritty/style.css"
+alias lcat="echo |lolcat -B -f 0.4 -S 8"
+alias cat='pygmentize -g -O style=colorful,linenos=1'
