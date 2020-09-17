@@ -13,5 +13,5 @@ alias dfgit="/usr/bin/git --git-dir=/home/jas/.cfg/ --work-tree=/home/jas"
 alias rsource='source /home/jas/.zshenv && echo |cat /home/jas/.zshenv'
 alias waybarcfg="vim /home/jas/.config/waybar/config"
 alias sources="sudo vim /etc/apt/sources.list"
-alias update="sudo apt update | lolcat && sudo apt upgrade | lolcat"
-alias cat="echo |cat |lolcat"
+alias update="sudo apt update | lolcat  -f 0.7 -S 2 -s 0 && sudo apt upgrade | lolcat -B -f 0.4 -S 4 -s 0"
+alias cat="echo |cat |lolcat -B -f 0.2 -S 6 -s 0"
