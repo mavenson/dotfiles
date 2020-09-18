@@ -22,7 +22,7 @@ set $menu dmenu_path | wofi --show dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-set $wallpaper1 /home/jas/images/wallpaper/bg4.jpg 
+set $wallpaper1 /home/jas/images/wallpaper/bg7.jp
 set $wallpaper2 /home/jas/images/wallpaper/bg3.jpg 
 
 default_border pixel
@@ -30,7 +30,6 @@ default_border pixel
 #
 output DVI-D-1 res 1680x1050 pos 0 1050 
 output HDMI-A-2 res 1680x1050 pos 0 0 
-
 
 
 workspace 1 output DVI-D-1
@@ -43,8 +42,8 @@ focus output DVI-D-1
 
 set $opacity 0.9
 
-for_window [class="^.*"] opacity $opacity
-for_window [app_id="^.*"] opacity $opacity
+for_window [class=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity
 
 
 
@@ -54,11 +53,11 @@ for_window [app_id="^.*"] opacity $opacity
 #
 # Example configuration:
 #
-#exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' \
-#               resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+          timeout 300 'swaylock -f -c 000000' \
+          timeout 600 'swaymsg "output * dpms off"' \
+               resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when

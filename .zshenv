@@ -12,7 +12,7 @@ export SDL_VIDEODRIVER="wayland"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export COLORTERM="truecolor"
 export XDG_CONFIG_HOME="/home/jas/.config"
-export WINIT_UNIX_BACKEND=""
+export WINIT_UNIX_BACKEND="x11"
 export STARSHIP_CONFIG="/home/jas/.config/starship"
 export GDK_BACKEND="wayland"
 
