@@ -13,6 +13,6 @@ export SDL_VIDEODRIVER='wayland'
 export _JAVA_AWT_WM_NONREPARENTING=1
 export COLORTERM='truecolor'
 export XDG_CONFIG_HOME='/home/jas/.config'
-export WINIT_UNIX_BACKEND="x11 alacritty"
+export WINIT_UNIX_BACKEND=alacritty
 source /home/jas/.zshrc
 

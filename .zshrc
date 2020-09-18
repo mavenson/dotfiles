@@ -7,7 +7,7 @@ export PATH="$PATH:/home/jas/.local/bin:/home/jas/.cargo/bin"
 #source /home/jas/.local/share/lscolors.sh
 source "/home/jas/.zalias"
 
-export TERMINAL="alacritty"
+#export TERMINAL="alacritty"
 export EDITOR="vim"
 
 
