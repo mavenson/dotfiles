@@ -1,8 +1,16 @@
-#!/usr/bin/zsh
+#!/usr/bin/zsh ~/.zprofile
+#
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
-  XKB_DEFAULT_LAYOUT=us exec sway
+export PATH="$PATH:/home/jas/.local/bin:/home/jas/.cargo/bin:/home/jas/.local/share:/home/jas/.config"
+
+export TERMINAL="alacritty"
+
+export EDITOR="vi"
+export VISUAL="vim"
+
+if [ "$(tty)" = "/dev/tty1" ]; then
+	exec sway
 fi
 
-export TERM='alacritty'
-export EDITOR='vim'
+source ~/.zshrc
+

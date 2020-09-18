@@ -22,16 +22,18 @@ set $menu dmenu_path | wofi --show dmenu | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-set $wallpaper1 /home/jas/images/wallpaper/bg7.jp
+set $wallpaper1 /home/jas/images/wallpaper/bg7.jpg
 set $wallpaper2 /home/jas/images/wallpaper/bg3.jpg 
 
 default_border pixel
 # Example configuration:
 #
-output DVI-D-1 res 1680x1050 pos 0 1050 
-output HDMI-A-2 res 1680x1050 pos 0 0 
+output DVI-D-1 pos 0 0 res 1680x1050 
+output HDMI-A-2 scale 1.2
+output HDMI-A-2 pos 1680 0 res 2016x1260
 
-
+set $term alacritty
+font pango:FantasqueSansMono Nerd Font Mono Regular
 workspace 1 output DVI-D-1
 workspace 2 output HDMI-A-2
 
@@ -40,10 +42,13 @@ output HDMI-A-2 bg $wallpaper2 fill
 
 focus output DVI-D-1
 
-set $opacity 0.9
+set $opacity 0.92
 
 for_window [class=".*"] opacity $opacity
-for_window [app_id=".*"] opacity $opacity
+for_window [app_id=".*"] opacity $opacity  
+#for_window [class="^Firefox$"] opacity $opacity 
+#for_window [class="^Gimp$"] opacity $opacity 
+#for_window [class="^Blender$"] opacity $opacity 
 
 
 
@@ -93,7 +98,7 @@ input "7247:22:SIGMACHIP_USB_Keyboard" {
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec alacritty 
+    bindsym $mod+Return exec $term 
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -234,4 +239,4 @@ bar {
     swaybar_command waybar
 }
 
-
+exec --no-startup-id [ -f $XDG_BIN_HOME/autostart.sh ] && . "$XDG_BIN_HOME/autostart.sh"
