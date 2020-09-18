@@ -5,6 +5,7 @@
 bindkey -e
 
 source /home/jas/.zalias
+source /home/jas/.vimrc
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000

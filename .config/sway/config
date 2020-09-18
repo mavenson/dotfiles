@@ -3,7 +3,7 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
-#xwayland disable
+xwayland disable
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -17,6 +17,8 @@ set $right l
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
+
+font pango: FantasqueSansMono NF Regular
 set $menu dmenu_path | wofi --show dmenu | xargs swaymsg exec --
 
 ### Output configuration
@@ -28,12 +30,10 @@ set $wallpaper2 /home/jas/images/wallpaper/bg3.jpg
 default_border pixel
 # Example configuration:
 #
-output DVI-D-1 pos 0 0 res 1680x1050 
-output HDMI-A-2 scale 1.2
-output HDMI-A-2 pos 1680 0 res 2016x1260
 
+output DVI-D-1 pos 0 1050 res 1680x1050
+output HDMI-A-2 pos 0 0 res 1680x1050
 set $term alacritty
-font pango:FantasqueSansMono Nerd Font Mono Regular
 workspace 1 output DVI-D-1
 workspace 2 output HDMI-A-2
 
