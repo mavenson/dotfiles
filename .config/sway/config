@@ -94,7 +94,7 @@ input "7247:22:SIGMACHIP_USB_Keyboard" {
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec Alacritty 
+    bindsym $mod+Return exec alacritty 
 
     # Kill focused window
     bindsym $mod+Shift+q kill
