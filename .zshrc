@@ -10,14 +10,15 @@ source /home/jas/.vimrc
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
 SAVEHIST=1000
-export HISTFILE="/home/jas/.zsh_history"
+export HISTFILE="$XDG_CACHE_HOME/zsh/zsh_history"
+
 
 
 eval "$(starship init zsh)"
 
 fpath+='/home/jas/.zsh_functions'
 
-export PAGER='most'
+
 
 
 

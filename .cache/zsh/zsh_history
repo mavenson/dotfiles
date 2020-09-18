@@ -1,27 +1,3 @@
-swaycfg
-swaycfg
-ls
-ls
-swaycfg
-swaycfg
-alaccfg
-sudo apt install gedit
-zshenv
-alaccfg
-alaccfg
-alaccfg
-fc-list: family style
-fc-list : family style
-alaccfg
-alaccfg
-l
-env
-fc-cache
-ls
-l
-ls
-update
-ls
 alaccfg
 ls
 alaccfg
@@ -1044,3 +1020,25 @@ zshenv
 sway
 zshenv
 zprofile
+zprofile
+tmux
+zprofile
+dfgit status
+dfgit add -u
+dfgit commit -m "troubleshooting root of prior terminal issue"
+dfgit push
+restart
+l
+zshenv
+zprofile
+zprofile
+zprofile
+l
+sway
+zshenv
+zprofile
+sway
+zprofile
+zshenv
+sway
+zshenv

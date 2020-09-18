@@ -1,27 +1,24 @@
-#!/usr/bin/zsh ~/.zprofile
-#
+#!/usr/bin/zsh
 
-if [ $PATH == /usr/local/bin:/usr/bin:/bin ]; then
-	export PATH=/home/jas/.local/bin:/home/jas/.cargo/bin:/home/jas:$PATH;
-elif [ -z "${PATH-}" ]; then
-	source /home/jas/.zshenv;
-else; then
-	unset PATH &&\ 
-	source .zshenv;
-fi
+path=$PATH
+
+#f [[ $path == "/usr/local/bin:/usr/bin:/bin" ]]; then
+    export PATH=/home/jas/.local/bin:/home/jas/.cargo/bin:$path
+#lse
+#   echo "ok"
+#i
 
 
-#export PATH=$PATH:/home/jas/.local/bin:/home/jas/.cargo/bin:/home/jas
 
 export TERMINAL="alacritty"
-
+export COLORTERM="truecolor"
 
 export VISUAL="vim"
 export EDITOR="vi"
 
-if [ "$(tty)" = "/dev/tty1" ]; then
+
+if [ "$(/bin/tty)" = "/dev/tty1" ]; then
 	exec sway
 fi
 
-source /home/jas/.zshrc
 
