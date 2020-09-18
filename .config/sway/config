@@ -25,7 +25,7 @@ set $menu dmenu_path | wofi --show dmenu | xargs swaymsg exec --
 set $wallpaper1 /home/jas/images/wallpaper/bg4.jpg 
 set $wallpaper2 /home/jas/images/wallpaper/bg3.jpg 
 
-
+default_border pixel
 # Example configuration:
 #
 output DVI-D-1 res 1680x1050 pos 0 1050 

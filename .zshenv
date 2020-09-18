@@ -6,7 +6,6 @@ export QT_QPA_PLATFORM="wayland-egl"
 export QT_WAYLAND_FORCE_DPI="physical"
 export ECORE_EVAS_ENGINE="wayland_egl"
 export ELM_ENGINE="wayland_egl"
-export XDG_SESSION_TYPE="wayland"
 export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export MOZ_ENABLE_WAYLAND=1
 export SDL_VIDEODRIVER="wayland"
@@ -15,6 +14,6 @@ export COLORTERM="truecolor"
 export XDG_CONFIG_HOME="/home/jas/.config"
 export WINIT_UNIX_BACKEND="x11"
 export STARSHIP_CONFIG="/home/jas/.config/starship"
+export GDK_BACKEND="wayland"
 
-source /home/jas/.zshrc
 
