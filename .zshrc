@@ -3,16 +3,18 @@
 # confirmations, etc.) must go above this block; everything else may go below.
 # Set up the prompt
 
-
-source /home/jas/.local/share/lscolors.sh
+export PATH="$PATH:/home/jas/.local/bin:/home/jas/.cargo/bin"
+#source /home/jas/.local/share/lscolors.sh
 source /home/jas/.zalias
+
+export TERMINAL="alacritty"
+export EDITOR="vim"
+
 
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
 
-### End of Zinit's installer chunk
-### End of Zinit's installer chunk
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
@@ -20,11 +22,9 @@ SAVEHIST=1000
 export HISTFILE="/home/jas/.zsh_history"
 
 
-# Use modern completion system
-autoload -Uz compinit
-
-
-
 eval "$(starship init zsh)"
-fpath+="/home/jas/.zsh_functions"
-export PAGER="most"
+fpath+='/home/jas/.zsh_functions'
+export PAGER='most'
+
+
+
