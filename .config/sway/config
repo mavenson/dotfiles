@@ -28,9 +28,9 @@ set $wallpaper2 /home/jas/images/wallpaper/bg3.jpg
 
 # Example configuration:
 #
-output HDMI-A-2 scale 1.5 
-output HDMI-A-2 pos 0 0 res 2520x1575
-output DVI-D-1 pos 0 1050 res 1680x1050
+output DVI-D-1 res 1680x1050 pos 0 1050 
+output HDMI-A-2 res 1975x1234 pos 0 0 scale 1.1755 
+
 
 workspace 1 output DVI-D-1
 workspace 2 output HDMI-A-2
@@ -40,7 +40,7 @@ output HDMI-A-2 bg $wallpaper2 fill
 
 focus output DVI-D-1
 
-set $opacity 0.8 
+set $opacity 0.92
 
 for_window [class=".*"] opacity $opacity
 for_window [app_id=".*"] opacity $opacity
