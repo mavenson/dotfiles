@@ -5,15 +5,10 @@
 
 background_opacity: 0.92
 
-
-
-  # This value is used to set the `$TERM` environment variable for
-  # each instance of Alacritty. If it is not present, alacritty will
-  # check the local terminfo database and use `alacritty` if it is
-  # available, otherwise `xterm-256color` is used.
-
-
-
+# This value is used to set the `$TERM` environment variable for
+# each instance of Alacritty. If it is not present, alacritty will
+# check the local terminfo database and use `alacritty` if it is
+# available, otherwise `xterm-256color` is used.
 window:
   # Window dimensions (changes require restart)
   #
@@ -29,23 +24,20 @@ window:
   #position:
   #  x: 0
   #  y: 0
-    
   #padding:
   #  x: 0
   #  y: 0
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
-  
-  decorations: none 
-
+  decorations: none
 
 # Font configuration
 font:
-  regular: 
+  regular:
     family: 'Fantasque Sans Mono'
-    style: Regular 
+    style: Regular
   bold:
-    family: 'Fantasque Sans Mono' 
+    family: 'Fantasque Sans Mono'
     style: Bold
   italic:
     family: 'Fantasque Sans Mono'
@@ -54,7 +46,6 @@ font:
     family: 'Fantasque Sans Mono'
     style: Bold Italic
   size: 12.0
-
   #  offset:
   # x: 2 
   # y: 2
@@ -77,29 +68,41 @@ mouse:
 shell:
   program: /usr/bin/zsh
 
-
 draw_bold_text_with_bright_colors: true
 colors:
+  # Default colors
   primary:
-    background: '#282a36'
-    foreground: '#f8f8f2'
+    background: '#161616'
+    foreground: '#e4e4e4'
 
+  # Cursor volors
+  cursor:
+    text: '#feffff'
+    cursor: '#ffb472'
+
+  # Normal colors
   normal:
-    black: '#000000'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#caa9fa'
-    magenta: '#ff79c6'
-    cyan: '#8be9fd'
-    white: '#bfbfbf'
+    black: '#a3a3a3'
+    red: '#e98885'
+    green: '#a3c38b'
+    yellow: '#ffc68d'
+    blue: '#a6cae2'
+    magenta: '#e7cdfb'
+    cyan: '#00a69f'
+    white: '#e4e4e4'
 
+  # Bright colors
   bright:
-    black: '#575b70'
-    red: '#ff6e67'
-    green: '#5af78e'
-    yellow: '#f4f99d'
-    blue: '#caa9fa'
-    magenta: '#ff92d0'
-    cyan: '#9aedfe'
-    white: '#e6e6e6'
+    black: '#c8c8c8'
+    red: '#ffb2b0'
+    green: '#c8e2b9'
+    yellow: '#ffe1af'
+    blue: '#bddff7'
+    magenta: '#fce2ff'
+    cyan: '#0bbdb6'
+    white: '#feffff'
+
+  # Selection colors
+  selection:
+    text: '#5963a2'
+    background: '#f6f6f6'

@@ -1,4 +1,4 @@
-#!/usr/bin/zsh ~/.zshenv
+#~/.zshenv
 #
 
 if [ -z "${PATH-}" ]; then export PATH=/usr/local/bin:/usr/bin:/bin; fi
@@ -12,14 +12,9 @@ export MOZ_ENABLE_WAYLAND=1
 export SDL_VIDEODRIVER="wayland"
 export _JAVA_AWT_WM_NONREPARENTING=1
 export SAL_USE_VCLPLUGIN="gtk3"
+export WINIT_UNIX_BACKEND="x11"
 
 
-
-export WINIT_UNIX_BACKEND="wayland"
-export STARSHIP_CONFIG="/home/jas/.config/starship"
-#export XDG_SESSION_TYPE="wayland"
-#export XDG_CONFIG_HOME="/home/jas/.config"
-#export XDG_DATA_HOME="/home/jas/.local/share"
 #export XDG_CONFIG_HOME="/home/jas/.config"
 #export XDG_BIN_HOME="/home/jas/.local/bin"
 #export XDG_LIB_HOME="/home/jas/.local/lib"
@@ -27,9 +22,7 @@ export STARSHIP_CONFIG="/home/jas/.config/starship"
 #export XDG_CONFIG_DIRS="/etc"
 #export XDG_BIN_DIRS="/usr/local/bin:/usr/bin"
 #export XDG_LIB_DIRS="/usr/local/lib:/usr/lib"
-#export XDG_CACHE_HOME="/home/jas/.cache"
-######export WAYLAND_DISPLAY="wayland-1"
 
-source /home/jas/.zprofile
-export CMAKE_CXX_STANDARD=14
+
+#export CMAKE_CXX_STANDARD=14
 

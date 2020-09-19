@@ -1,72 +1,3 @@
-alaccfg
-ls
-alaccfg
-ls
-alaccfg
-alaccfg
-alaccfg
-alaccfg
-alaccfg
-rsource
-l
-rsource
-alaccfg
-ls
-update
-l
-ls
-dfgit add .config/alacritty/alacrity.yml
-dfgit add ~/.config/alacritty/alacrity.yml
-dfgit add ~/.config/alacritty/alacritty.yml
-dfgit status
-dfgit add .config/sway/config .zalias .zshenv .zshrc
-dfgit status
-dfgit commit -m "added alacritty.yml"
-dfgit push
-cd .config
-ls
-alacrity
-cat alacrity
-ls
-cd alacritty
-ls
-cd ..
-ls
-l
-rm -rf alacrity
-alacritty
-zshenv
-jas
-sway
-ls
-zshenv
-rsource
-zprofile
-zshrc
-rsource
-ls
-zshrc
-dfgit add ~/.zsh_history
-dfgit commit -m "added .zsh_history" 
-dfgit push
-dfgit status
-dfgit add .zshenv .zshrc .zprofile
-dfgit commit -m "added .zsh_history modified" 
-dfgit push
-dfgit status
-ls
-l
-restart
-l
-swaycfg
-swaycfg
-swaycfg
-which alacritty
-./$(which alacritty)
-.$(which alacritty)
-$(which alacritty)
-./$(which alacritty)
-$(which alacritty)
 zsh $(which alacritty)
 exec $(which alacritty)
 /usr/local/bin/alacritty
@@ -1042,3 +973,124 @@ zprofile
 zshenv
 sway
 zshenv
+zshenv
+zshenv
+l
+sudo apt remove kitty
+zalias
+autorm kitty
+source ~/.zalias
+autorm kitty
+source ~/zshrc
+source ~/.zshrc
+autorm kitty
+source ~/.zprofile
+autorm kitty
+autorm kitty
+autorm | kitty
+sudo apt autoremove && purge kitty terminator
+sudo apt  purge --autoremove  kitty terminator
+sudo apt  purge --autoremove  kitty terminator
+sudo apt  purge --autoremove terminator
+sudo apt install terminology
+ls
+swaycfg
+zprofile
+l
+ls
+zshenv
+ls
+swaycfg
+zprofile
+ls
+l
+rm -rf .zprofile~ .zshenv~ .zshrc~ .zalias~
+l
+sudo apt purge --autoremove emacs
+ls
+update
+source ~/.zprofile
+update
+sudo vim /etc/zshenv
+ls
+zprofile
+swaycfg
+zshenv
+l
+zshrc
+zprofile
+zprofile
+zshenv
+zshenv
+zshenv
+zshenv
+exit
+logout
+exit sway
+sudo systemctl stop sway
+sway
+sway stop
+ps -a
+sudo kill sway
+sudo kill Xwayland
+sudo kill 16805
+sway --help
+sway qui
+sway quit
+sway exit
+zshenv
+sway
+sway
+sway exit
+l
+ls
+ls
+ls
+ls
+ls
+ls
+ls
+l
+dfgit status
+.vim
+ls
+cd .vim
+ls
+cd ..
+ls
+rm -rf .vim
+ls
+ls -la
+cd .elementary
+ls
+cd config
+ls
+cd standard
+ls
+cd ..
+ls
+l
+cd ..
+ls
+.
+l
+cd config
+ls
+l
+cd standard
+ll
+l
+cd ~
+ls
+cd ~
+rm -rf .elementary
+ls
+ls
+ls
+ls
+ls
+ll
+l
+l
+zshenv
+sway exit
